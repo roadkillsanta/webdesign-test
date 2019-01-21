@@ -25,7 +25,8 @@ body{
     -webkit-animation: rainbow 18s ease infinite;
     -z-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
+    animation: rainbow 18s ease infinite;
+}
 
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -166,12 +167,8 @@ body{
     display: inline-block;
     width: 100%;
 }
-.downpng{
-    display: inline-block;
-    margin: 0 auto;
-    width: 32px;
-}
 .merchimg{
     width: 256px;
     height: 256px;
+    display: inline-block;
 }
