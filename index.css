@@ -101,7 +101,7 @@ body{
 
 .parallax::after {
     /* Display and position the pseudo-element */
-    content: "";
+	content:"";
     position: absolute;
     top: 0;
     right: 0;
@@ -130,12 +130,13 @@ body{
     background-image: url('./IMG_s0021.png');
 }
 .static1 {
-    background-image: url("https://placekitten.com/g/800/600");
-    background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("music.jpg");
+    background-repeat: repeat-x;
     background-size: 100%;
 }
 .bg2::after {
-    background-image: url('https://placekitten.com/g/800/600');
+    background-image: url('IMG_0021.PNG');
 }
 .static2 {
     background-image: url("https://placekitten.com/g/800/600");
@@ -144,7 +145,16 @@ body{
 }
 
 
+.cover {
+	display: inline-block;
+	align-content: center;
 
+}
+.coverimg{
+	width: 256px;
+	height: 256px;
+	
+}
 .font48{
     font-size: 96px;
     font-weight: lighter;
