@@ -126,12 +126,23 @@ body{
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-    background-image: url('IMG_0021.png');
+.intro::after {
+    background-image: url('./IMG_s0021.png');
+}
+.static1 {
+    background-image: url("https://placekitten.com/g/800/600");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .bg2::after {
     background-image: url('https://placekitten.com/g/800/600');
 }
+.static2 {
+    background-image: url("https://placekitten.com/g/800/600");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 
 
 .font48{
