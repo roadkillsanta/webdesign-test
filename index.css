@@ -139,7 +139,7 @@ body{
     background-image: url('IMG_0021.PNG');
 }
 .static2 {
-    background-image: url("https://placekitten.com/g/800/600");
+    background-color: white;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -170,4 +170,8 @@ body{
     display: inline-block;
     margin: 0 auto;
     width: 32px;
+}
+.merchimg{
+    width: 256px;
+    height: 256px;
 }
