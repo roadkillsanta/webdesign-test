@@ -7,60 +7,61 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<script src="index.js" type="text/javascript"></script>
-    <script src="inview.js" type="text/javascript"></script>
+	<script src="inview.js" type="text/javascript"></script>
 	<script language="javascript">
-window.tdiff = []; fred = function(a,b){return a-b;};
-window.document.onload = function(e){ 
-    console.log("document.onload", e, Date.now() ,window.tdiff,  
-    (window.tdiff[0] = Date.now()) && window.tdiff.reduce(fred) ); 
-}
-window.onload = function(e){ 
-    console.log("window.onload", e, Date.now() ,window.tdiff, 
-    (window.tdiff[1] = Date.now()) && window.tdiff.reduce(fred) ); 
-}
+	window.tdiff = []; fred = function(a,b){return a-b;};
+	window.document.onload = function(e){ 
+	console.log("document.onload", e, Date.now() ,window.tdiff,  
+	(window.tdiff[0] = Date.now()) && window.tdiff.reduce(fred) ); 
+	}
+	window.onload = function(e){ 
+	console.log("window.onload", e, Date.now() ,window.tdiff, 
+	(window.tdiff[1] = Date.now()) && window.tdiff.reduce(fred) ); 
+	}
 	</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body onload="">
-    <div class="background">
-    <main class="wrapper">
-        <section id="1" class="section parallax intro">
-            <h1 class="font48" style="color: #BE392A;">p</h1><h1 class="font48" style="color: #F39C3F;">h</h1><h1 class="font48" style="color: #4DAE63;">z</h1><h1 class="font48" style="color: #3998DA;">z</h1><h1 class="font48" style="color: #8F44AD;">l</h1>
-        </section>
-        <section id="2" class="section static1" style="display: block;">
-            <h1>Music</h1>
-            <div class="download">
-                <div class="cover">
-                    <img class="coverimg" src="cover1.svg">
-                        <p>SONG NAME | COST</p>
-                        </div>
-                <div class="cover">
-                    <img class="coverimg" src="cover2.svg">
-                        <p>SONG NAME | COST</p>
-                        </div>
-                <div class="cover">
-                    <img class="coverimg" src="cover3.svg">
-                        <p>SONG NAME | COST</p>
-                        </div>
-            </div>
-        </section>
-        <section id="3" class="section parallax bg2">
-            <h1>Downloads</h1>
-        </section>
-        <section id="4" class="section static2">
-            <h1>Boring</h1>
-        </section>
-        <section id="5" class="section parallax bg1">
-            <h1>Phzzl</h1>
-        </section>
-        <section id="6" class="section static">
-            <h1>Boring</h1>
-        </section>
-        <section id="7" class="section parallax bg2">
-            <h1>SO FWUFFY AWWW</h1>
-        </section>
-    </main>
-    </div>
+<div class="background">
+	<main class="wrapper">
+	<section id="1" class="section parallax intro">
+		<img style="width: 512px;" src="mainimg.png">
+		<h1 class="font48" style="color: #BE392A;">p</h1><h1 class="font48" style="color: #F39C3F;">h</h1><h1 class="font48" style="color: #4DAE63;">z</h1><h1 class="font48" style="color: #3998DA;">z</h1><h1 class="font48" style="color: #8F44AD;">l</h1>
+	</section>
+	<section id="2" class="section static1" style="display: block;">
+		<h1>Music</h1>
+		<div class="download">
+			<div class="cover">
+				<img class="coverimg" src="cover1.svg">
+				<p>SONG NAME | COST</p>
+			</div>
+			<div class="cover">
+				<img class="coverimg" src="cover2.svg">
+				<p>SONG NAME | COST</p>
+			</div>
+			<div class="cover">
+				<img class="coverimg" src="cover3.svg">
+				<p>SONG NAME | COST</p>
+			</div>
+		</div>
+	</section>
+	<section id="3" class="section parallax bg2">
+		<h1>Downloads</h1>
+	</section>
+	<section id="4" class="section static2">
+		<h1>Boring</h1>
+	</section>
+	<section id="5" class="section parallax bg1">
+		<h1>Phzzl</h1>
+	</section>
+	<section id="6" class="section static">
+		<h1>Boring</h1>
+	</section>
+	<section id="7" class="section parallax bg2">
+		<h1>SO FWUFFY AWWW</h1>
+	</section>
+	</main>
+</div>
 </body>
 </html>
