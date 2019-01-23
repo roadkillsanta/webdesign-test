@@ -180,12 +180,9 @@ body{
 }
 .static3{
 	background-size: contain;
-    background-color: #FB10F9;
+    background-color: aqua;
     background-repeat: repeat-x;
     background-size: 100%;
-}
-.bg4::after{
-	background-color: aqua;
 }
 
 .cover {
