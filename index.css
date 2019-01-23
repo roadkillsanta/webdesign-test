@@ -4,12 +4,10 @@ body{
     left: 0;
     right: 0;
 	font-family: 'Source Sans Pro', sans-serif;
-	background: #BAB3B3;
 	text-align: center;
 	display: block;
 	align-items: center;
     scroll-snap-align: start;
-    background-color: blue;
 }
 .background {
     height: 100%;
@@ -26,7 +24,7 @@ body{
     -z-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
     animation: rainbow 18s ease infinite; */
-	background-color: #222;
+    background-color: white;
 	animation-name: color;
 	animation-duration: 20s;
 	animation-iteration-count: infinite;
@@ -34,22 +32,22 @@ body{
 
 @keyframes color {
 	0% {
-		background-color: #6900FF;
+		background-color: #6900FF33;
 	}
 	20% {
-		background-color: #03FFF3;
+		background-color: #03FFF333;
 	}
 	40% {
-		background-color: #01F752;
+		background-color: #01F75233;
 	}
 	60% {
-		background-color: #EFF516;
+		background-color: #EFF51633;
 	}
 	80% {
-		background-color: #FF0202;
+		background-color: #FF020233;
 	}
 	100%{
-		background-color: #6900FF
+		background-color: #6900FF33
 	}
 }
 
