@@ -254,7 +254,7 @@ a.darken:hover img {
 	height: 50px;
 	padding: 0;
 	background-color: transparent;
-	position: absolute;
+	position: static;
 }
 .headerbtn{
 	background: transparent;
