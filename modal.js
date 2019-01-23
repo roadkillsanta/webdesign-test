@@ -13,7 +13,7 @@ beforeClose: function() {
 // set content
 aboutmodal.setContent('<h1>Our LM TSA Chapter</h1>');
 
-aboutmodal.addFooterBtn('See STEM Courses', 'tingle-btn tingle-btn--primary', function() {
+aboutmodal.addFooterBtn('See Engineering Programs', 'tingle-btn tingle-btn--primary', function() {
 aboutmodal.close();
 window.location.href="index.html#stem";
 });
