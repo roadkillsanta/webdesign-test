@@ -1,4 +1,3 @@
-// instanciate new modal
 var aboutmodal = new tingle.modal({
 	footer: true,
 	stickyFooter: false,
@@ -37,6 +36,28 @@ window.location.href="index.html#stem";
 });
 aboutmodal.addFooterBtn('Close', 'tingle-btn tingle-btn--primary', function() {
 aboutmodal.close();
+});
+
+var merchmodal = new tingle.modal({
+	footer: true,
+	stickyFooter: false,
+	closeMethods: ['overlay', 'button', 'escape'],
+	closeLabel: "Close",
+	cssClass: ['custom-class-1', 'custom-class-2'],
+beforeClose: function() {
+	return true; // close the modal
+	return false; // nothing happens
+}
+});
+// set content
+merchmodal.setContent(`
+<h1>Buy Merch</h1>
+<div>
+
+</div>`);
+
+merchmodal.addFooterBtn('Close', 'tingle-btn tingle-btn--primary', function() {
+merchmodal.close();
 });
 
 var modal0 = new tingle.modal({
