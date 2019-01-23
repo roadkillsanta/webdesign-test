@@ -17,7 +17,7 @@
 	<section id="1" class="section parallax intro">
 		<div style="text-align: center; display: block;">
 			<img style="display:block; width: 512px;" src="mainimg.png">
-			<p style="display:block; color: white;">Scroll down to see more</p>
+			<p style="display:block; color: #242945;">Scroll down to see more</p>
 		</div>
 <!--
 OLD TEXT COLORING
@@ -34,15 +34,15 @@ OLD TEXT COLORING
 		<br>
 		<div class="download">
 			<div class="cover">
-				<img border="5px" class="coverimg" src="cover/IMG_0029.PNG">
+				<a href="http://google.com" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0029.PNG"></a>
 				<p style="font-size: 18px; color: #5F828C;">Ladle | <a>COST</a></p>
 			</div>
 			<div style="padding: 16px;" class="cover">
-				<img border="5px" class="coverimg" src="cover/IMG_0038.PNG">
+				<a href="http://google.com" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0038.PNG"></a>
 				<p style="font-size: 18px; color: #5F828C;">Portrait | <a>COST</a></p>
 			</div>
 			<div class="cover">
-				<img border="5px" class="coverimg" src="cover/IMG_0034.PNG">
+				<a href="http://google.com" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0034.PNG"></a>
 				<p style="font-size: 18px; color: #5F828C;">Name | <a>COST</a></p>
 			</div>
 		</div>
@@ -107,17 +107,81 @@ OLD TEXT COLORING
         </div>
         </div>
 	</section>
-	<section id="5" class="section parallax bg1">
-		<h1 style="font-size: 48px; padding: 64px;">About Me</h1>
-		<p>Phzzl is a 24 year old Philly-based artist that uses fun rhythms and catchy melodies to make you want to dance, perfect for mass raves or concerts. He got into music after working a lot with Garageband for school, and started to play with sounds and beats in his late teens. Phzzl got his big break in 2014 with the release of his single, //NEW NAME PLS//, that got over 800,000 streams on SoundCloud. He really made himself known in 2016, when he topped the Billboard Hot 100 with his single Portrait. Phzzl has just dropped his album, Ladle, and is now preparing for his northeastern tour (tickets here). When he’s not dropping sick beats, Phzzl is at his apartment in Philly playing with his dog Laurie and watching reruns of The Office.</p>
+	<section id="5" class="section parallax bg3">
+		<div>
+			<h1 style="font-size: 48px; padding: 64px;">About Me</h1>
+			<p style="font-size: 18px; padding: 5% 20%; color: #FFFFFF;">Phzzl is a 24 year old Philly-based artist that uses fun rhythms and catchy melodies to make you want to dance, perfect for mass raves or concerts. He got into music after working a lot with Garageband for school, and started to play with sounds and beats in his late teens. Phzzl got his big break in 2014 with the release of his single, //NEW NAME PLS//, that got over 800,000 streams on SoundCloud. He really made himself known in 2016, when he topped the Billboard Hot 100 with his single Portrait. Phzzl has just dropped his album, Ladle, and is now preparing for his northeastern tour (tickets here). When he’s not dropping sick beats, Phzzl is at his apartment in Philly playing with his dog Laurie and watching reruns of The Office.</p>
+		</div>
 	</section>
 	<section id="6" class="section static3">
 		<h1>About our TSA chapter</h1>
+		<button>See More</button>
 	</section>
-	<section id="7" class="section parallax bg3">
-		<h1>SO FWUFFY AWWW</h1>
+	<section id="7" class="section parallax bg4">
+		<div style="color: black; height: 100%; padding: 16px;">
+			<h1>Stem Courses</h1>
+			<div style="height: 33%;">
+				<div id="card" class="card">
+					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+					<h3>Foundations of Engineering and Design</h3>
+				</div>
+				<div id="card" class="card">
+					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+					<h3>Computer Aided Design and Drafting</h3>
+				</div>
+				<div id="card" class="card">
+					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+					<h3>Innovation and Invention - Robotics</h3>
+				</div>
+			</div>
+			<br>
+			<div style="height: 33%;">
+				<div id="card" class="card">
+					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+					<h3>Architectual Design</h3>
+				</div>
+				<div id="card" class="card">
+					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+					<h3>AP Computer Science A</h3>
+				</div>
+				<div id="card" class="card">
+					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+					<h3>AP Physics C: Mechanics</h3>
+				</div>
+			</div>
+			<br>
+			<br>
+			<p style="font-size: 20px; padding: 20px;">Click on each card to learn more!</p>
+		</div>
 	</section>
 	</main>
 </div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("card");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
 </body>
 </html>
