@@ -239,6 +239,7 @@ a.darken:hover img {
 	display: inline-block;
 	width: 14%;
 	margin: 5%;
+	height: 100%;
 }
 
 /* On mouse-over, add a deeper shadow */
