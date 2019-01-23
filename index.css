@@ -149,7 +149,7 @@ body{
 }
 .static3{
 	background-size: contain;
-    background-image: url("reee.jpg");
+    background-color: beige;
     background-repeat: repeat-x;
     background-size: 100%;
 }
