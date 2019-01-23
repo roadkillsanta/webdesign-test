@@ -13,16 +13,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.14.0/tingle.js"></script>
 </head>
 
-<body onload="">
+<body onload="aboutmodal.open()">
 <div class="background">
 	<div class="navbar" id="navbar">
-		<a class="headerbtn" href="lmtsa.html">About Our Chapter</a>
-		<a class="headerbtn" href="#STEM">STEM Courses</a>
-		<a class="headerbtn" href="#downloads">Download</a>
-		<a class="headerbtn" href="#tour">Tour</a>
-		<a class="headerbtn">Tickets</a>
-		<a class="headerbtn">Merch</a>
-		<a class="headerbtn">Bio</a>
+		<a class="headerbtn" onclick="aboutmodal.open()">About Our Chapter</a>
+		<a class="headerbtn" href="index.html#stem">STEM Courses</a>
+		<a class="headerbtn" href="index.html#downloads">Download</a>
+		<a class="headerbtn" href="index.html#tour">Tour</a>
+		<a class="headerbtn" onclick="ticketmodal.open()">Tickets</a>
+		<a class="headerbtn" href="index.html#merch">Merch</a>
+		<a class="headerbtn" href="index.html#bio">About Me</a>
 	</div>
 	<main class="wrapper">
 	<section id="1" class="section parallax intro">
@@ -39,11 +39,11 @@ OLD TEXT COLORING
 <h1 class="font48" style="color: #8F44AD;">l</h1>
 -->
 	</section>
-	<section id="2" class="section static1" style="display: block;">
+	<section id="downloads" class="section static1" style="display: block;">
 		<h1 style="font-size: 48px; padding: 64px;">Music</h1>
 		<br>
 		<br>
-		<div class="download" id="downloads">
+		<div class="download">
 			<div class="cover">
 				<a href="http://google.com" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0029.PNG"></a>
 				<p style="font-size: 18px; color: #5F828C;">Ladle | <a>$.99</a></p>
@@ -99,7 +99,7 @@ OLD TEXT COLORING
 		</table>
 		</div>
 	</section>
-    <section id="4" class="section static2">
+    <section id="merch" class="section static2">
         <div style="margin: 0 auto; padding-top 0px; width: 100%; height: 100%;">
             <h1 style="font-size: 48px; color: black; padding: 16px;">Merch</h1>
         <div class="download">
@@ -118,58 +118,51 @@ OLD TEXT COLORING
         </div>
         </div>
 	</section>
-	<section id="5" class="section parallax bg3">
+	<section id="bio" class="section parallax bg3">
 		<div>
 			<h1 style="font-size: 48px; padding: 64px;">About Me</h1>
 			<p style="font-size: 18px; padding: 5% 20%; color: #FFFFFF;">Phzzl is a 24 year old Philly-based artist that uses fun rhythms and catchy melodies to make you want to dance, perfect for mass raves or concerts. He got into music after working a lot with Garageband for school, and started to play with sounds and beats in his late teens. Phzzl got his big break in 2014 with the release of his single, //NEW NAME PLS//, that got over 800,000 streams on SoundCloud. He really made himself known in 2016, when he topped the Billboard Hot 100 with his single Portrait. Phzzl has just dropped his album, Ladle, and is now preparing for his northeastern tour (tickets here). When he’s not dropping sick beats, Phzzl is at his apartment in Philly playing with his dog Laurie and watching reruns of The Office.</p>
 		</div>
 	</section>
-	<section id="6" class="section static3">
-		<h1>About our TSA chapter</h1>
-		<button>See More</button>
-	</section>
-	<section id="7" class="section parallax bg4">
-		<script src="modal.js"></script>
-		<div style="color: black; height: 100%; padding: 16px;">
-			<h1>Stem Courses</h1>
-			<div style="height: 33%;">
-				<div class="card" onclick="modal0.open()">
-					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
-					<h3>Foundations of Engineering and Design</h3>
-				</div>
-				<div class="card" onclick="modal1.open()">
-					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
-					<h3>Computer Aided Design and Drafting</h3>
-				</div>
-				<div class="card" onclick="modal2.open()">
-					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
-					<h3>Innovation and Invention - Robotics</h3>
-				</div>
+	<section id="stem" class="section parallax bg4">
+	<script src="modal.js"></script>
+	<div style="color: black; height: 100%; padding: 16px; padding-top: 32px;">
+		<h1>Stem Courses</h1>
+		<div style="height: 33%;">
+			<div class="card" onclick="modal0.open()">
+				<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+				<h3>Foundations of Engineering and Design</h3>
 			</div>
-			<br>
-			<div style="height: 33%;">
-				<div class="card" onclick="modal3.open()">
-					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
-					<h3>Architectual Design</h3>
-				</div>
-				<div class="card" onclick="modal4.open()">
-					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
-					<h3>AP Computer Science A</h3>
-				</div>
-				<div class="card" onclick="modal5.open()">
-					<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
-					<h3>AP Physics C: Mechanics</h3>
-				</div>
+			<div class="card" onclick="modal1.open()">
+				<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+				<h3>Computer Aided Design and Drafting</h3>
 			</div>
-			<br>
-			<br>
-			<p style="font-size: 20px; padding: 20px;">Click on each card to learn more!</p>
+			<div class="card" onclick="modal2.open()">
+				<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+				<h3>Innovation and Invention - Robotics</h3>
+			</div>
 		</div>
+		<br>
+		<div style="height: 33%;">
+			<div class="card" onclick="modal3.open()">
+				<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+				<h3>Architectual Design</h3>
+			</div>
+			<div class="card" onclick="modal4.open()">
+				<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+				<h3>AP Computer Science A</h3>
+			</div>
+			<div class="card" onclick="modal5.open()">
+				<img src="https://www.w3schools.com/howto/img_avatar.png" style="width: 100%;">
+				<h3>AP Physics C: Mechanics</h3>
+			</div>
+		</div>
+		<br>
+		<br>
+		<p style="font-size: 20px; padding: 20px;">Click on each card to learn more!</p>
+	</div>
 	</section>
 	</main>
 </div>
-
-
-
 </body>
 </html>

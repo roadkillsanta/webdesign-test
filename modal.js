@@ -1,4 +1,26 @@
 // instanciate new modal
+var aboutmodal = new tingle.modal({
+	footer: true,
+	stickyFooter: false,
+	closeMethods: ['overlay', 'button', 'escape'],
+	closeLabel: "Close",
+	cssClass: ['custom-class-1', 'custom-class-2'],
+beforeClose: function() {
+	return true; // close the modal
+	return false; // nothing happens
+}
+});
+// set content
+aboutmodal.setContent('<h1>Our LM TSA Chapter</h1>');
+
+aboutmodal.addFooterBtn('See STEM Courses', 'tingle-btn tingle-btn--primary', function() {
+aboutmodal.close();
+window.location.href="index.html#stem";
+});
+aboutmodal.addFooterBtn('Close', 'tingle-btn tingle-btn--primary', function() {
+aboutmodal.close();
+});
+
 var modal0 = new tingle.modal({
 	footer: true,
 	stickyFooter: false,
