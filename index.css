@@ -133,7 +133,7 @@ body{
 .static1 {
 	background-size: contain;
     background-image: url("music.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 .bg2::after {
@@ -144,7 +144,15 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
+.bg3::after{
+	background-color: aqua;
+}
+.static3{
+	background-size: contain;
+    background-image: url("reee.jpg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+}
 
 .cover {
 	display: inline-block;
