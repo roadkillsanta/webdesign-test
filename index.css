@@ -160,7 +160,10 @@ body{
     background-size: 100%;
 }
 .bg2::after {
-    background-image: url('IMG_0021.PNG');
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('IMG_0021.PNG');
+	background-position:center top;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .static2 {
     background-color: white;
