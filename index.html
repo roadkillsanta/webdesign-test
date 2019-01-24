@@ -17,7 +17,7 @@
 <div class="background">
 	<div class="navbar" id="navbar">
 		<a class="headerbtn" onclick="aboutmodal.open()">About Our Chapter</a>
-		<a class="headerbtn" href="index.html#downloads">Download</a>
+		<a class="headerbtn" href="index.html#downloads">Music</a>
 		<a class="headerbtn" href="index.html#tour">Tour</a>
 		<a class="headerbtn" onclick="ticketmodal.open()">Tickets</a>
 		<a class="headerbtn" href="index.html#merch">Merch</a>
@@ -45,19 +45,28 @@ OLD TEXT COLORING
 		<br>
 		<div class="download">
 			<div class="cover">
-				<a onclick="" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0029.PNG"></a>
+				<a onclick="toggleDisplay('audio1');" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0029.PNG"></a>
 				<p style="font-size: 18px; color: #fff;">Ladle | <a>$.99</a></p>
+				<audio id="audio1" controls="controls" style="display:none;">
+					<source src="songs/ladle.mp3" type="audio/mpeg">
+				</audio>
 			</div>
 			<div style="padding: 16px;" class="cover">
-				<a onclick="" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0038.PNG"></a>
+				<a onclick="toggleDisplay('audio2');" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0038.PNG"></a>
 				<p style="font-size: 18px; color: #fff;">Portrait | <a>$.99</a></p>
+				<audio id="audio2" controls="controls" style="display:none;">
+					<source src="songs/portrait.mp3" type="audio/mpeg">
+				</audio>
 			</div>
 			<div class="cover">
-				<a onclick="" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0034.PNG"></a>
+				<a onclick="toggleDisplay('audio3');" class="darken"><img border="5px" class="coverimg" src="cover/IMG_0034.PNG"></a>
 				<p style="font-size: 18px; color: #fff;">Sweet | <a>$.99</a></p>
+				<audio id="audio3" controls="controls" style="display:none;">
+					<source src="songs/sweet.mp3" type="audio/mpeg">
+				</audio>
 			</div>
 		</div>
-		<p>Click on each song to hear a sample!</p>
+		<p>Click on each song to show controls!</p>
 	</section>
 	<section id="tour" class="section parallax bg2">
 		<div class="calendar" style="zoom:0.7">
@@ -151,7 +160,7 @@ OLD TEXT COLORING
 	<section id="bio" class="section parallax bg3">
 		<div>
 			<h1 style="font-size: 48px; padding: 64px; color: black;">About Me</h1>
-			<p style="font-size: 18px; padding: 5% 20%; color: black;">Phzzl is a 24 year old Philly-based artist that uses fun rhythms and catchy melodies to make you want to dance, perfect for mass raves or concerts. He got into music after working a lot with Garageband for school, and started to play with sounds and beats in his late teens. Phzzl got his big break in 2014 with the release of his single, Ladle, that got over 800,000 streams on SoundCloud. He really made himself known in 2016, when he topped the Billboard Hot 100 with his single Portrait. Phzzl has just dropped his album, Sweet, and is now preparing for his northeastern tour (tickets here). When he’s not dropping sick beats, Phzzl is at his apartment in Philly playing with his dog Laurie and watching reruns of The Office.</p>
+			<p style="font-size: 18px; padding: 5% 20%; color: black;">Phzzl is a 24 year old Philly-based artist that uses fun rhythms and catchy melodies to make you want to dance, perfect for mass raves or concerts. He got into music after working a lot with Garageband for school, and started to play with sounds and beats in his late teens. Phzzl got his big break in 2014 with the release of his single, Ladle, that got over 800,000 streams on SoundCloud. He really made himself known in 2016, when he topped the Billboard Hot 100 with his single Portrait. Phzzl has just dropped his album, Sweet, and is now preparing for his northeastern tour <a onclick="ticketmodal.open()">(tickets here)</a>. When he’s not dropping sick beats, Phzzl is at his apartment in Philly playing with his dog Laurie and watching reruns of The Office.</p>
 		</div>
 	</section>
 	<section id="stem" class="section static3">
